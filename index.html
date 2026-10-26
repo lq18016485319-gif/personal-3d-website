@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="陆琦的小小工作室。一张桌子，收集设计、视觉与日常的灵感。">
+  <title>陆琦 LU QI · 小小工作室</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#works">跳到作品</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="陆琦的工作室首页"><span class="brand-symbol" aria-hidden="true">lq.</span><span>LU QI<span class="brand-sub">A LITTLE STUDIO</span></span></a>
+    <nav class="nav" aria-label="主导航">
+      <a class="active" href="#home">工作室 <span>Studio</span></a>
+      <a href="#works">作品 <span>Work</span></a>
+      <button data-open="about">关于 <span>About</span></button>
+    </nav>
+    <button class="contact-button" data-open="contact">打个招呼 <span aria-hidden="true">↗</span></button>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> WELCOME TO MY LITTLE CORNER</div>
+        <h1 id="hero-title">把想法，<br>摆在<span class="serif-word">桌上</span><span class="period">。</span></h1>
+        <p class="intro">你好，我是陆琦。<br>在设计、视觉和日常之间，<br>收集灵感，也让一些想法发生。</p>
+        <a class="text-link" href="#works">看看我的作品 <span aria-hidden="true">↗</span></a>
+        <p class="hero-aside">A small space for a curious mind.</p>
+      </div>
+      <div class="studio-wrap" id="studio-wrap">
+        <div class="scene-glow" aria-hidden="true"></div>
+        <div class="studio-canvas" id="studio" role="img" aria-label="奶油色桌面工作室，桌上有电脑、笔记本、相机和信封；可以通过下方按钮探索对应内容。"></div>
+        <div class="loading" id="loading"><span class="loading-mark">lq.</span><span>整理一下桌面…</span></div>
+        <div class="scene-label" aria-hidden="true"><span>01 — THE STUDIO</span><span>MAKE YOURSELF AT HOME.</span></div>
+        <div class="hotspots" id="hotspots" aria-label="探索桌面物件">
+          <button class="hotspot" id="spot-work" data-open="work"><span class="hotspot-dot">+</span><span class="hotspot-label">作品集 <small>SELECTED WORK</small></span></button>
+          <button class="hotspot" id="spot-about" data-open="about"><span class="hotspot-dot">+</span><span class="hotspot-label">关于我 <small>ABOUT ME</small></span></button>
+          <button class="hotspot" id="spot-notes" data-open="notes"><span class="hotspot-dot">+</span><span class="hotspot-label">灵感笔记 <small>DAILY NOTES</small></span></button>
+          <button class="hotspot" id="spot-contact" data-open="contact"><span class="hotspot-dot">+</span><span class="hotspot-label">一封来信 <small>SAY HELLO</small></span></button>
+        </div>
+        <div class="scene-hint"><span class="mouse-icon" aria-hidden="true"></span><span>轻点桌上的物件，随意逛逛</span><span class="hint-line"></span><button id="reset-scene" aria-label="恢复桌面视角">复位视角 <span aria-hidden="true">↺</span></button></div>
+      </div>
+      <div class="hero-foot"><span>DESIGN · VISUAL · EVERYDAY</span><a href="#works">向下，还有一些东西 <span aria-hidden="true">↓</span></a><span>EST. 2026</span></div>
+    </section>
+
+    <section class="works section-shell" id="works" aria-labelledby="works-title">
+      <div class="section-head"><div><p class="eyebrow">02 / THINGS I'M EXPLORING</p><h2 id="works-title">一些想法，<br><span>正在成形。</span></h2></div><div class="section-description"><p>从一张纸到一块屏幕，<br>给好奇心留一点位置。</p><span>VISUAL STUDIES & EXPLORATIONS</span></div></div>
+      <div class="work-filters" role="group" aria-label="按类别查看作品"><button class="selected" data-filter="all" aria-pressed="true">全部 <sup>03</sup></button><button data-filter="visual" aria-pressed="false">视觉探索</button><button data-filter="digital" aria-pressed="false">数字体验</button><button data-filter="everyday" aria-pressed="false">日常观察</button><span id="filter-count" aria-live="polite">3 个探索</span></div>
+      <div class="work-grid" id="work-grid"></div>
+      <p class="work-caption">这里先放下三个为新工作室创作的视觉练习，真实项目会陆续入住。</p>
+    </section>
+
+    <section class="little-note section-shell" aria-labelledby="note-title"><div class="note-stamp" aria-hidden="true"><span>STAY<br>CURIOUS</span><svg viewBox="0 0 80 80"><path d="M40 12v56M12 40h56M20 20l40 40M20 60l40-40"/></svg></div><div><p class="eyebrow">A NOTE TO MYSELF</p><h2 id="note-title">认真做事，<br>也别忘了<span>好好生活。</span></h2><p>让这里成为一处可以慢慢生长的地方。<br>记录做过的事、看见的风景，和还没有完成的想法。</p><button class="text-link" data-open="notes">翻开灵感笔记 <span aria-hidden="true">↗</span></button></div><span class="handwriting">Less rush.<br>More wonder.</span></section>
+
+    <section class="hello section-shell" aria-labelledby="hello-title"><p class="eyebrow">HAVE SOMETHING IN MIND?</p><h2 id="hello-title">好想法，<br>从一声<span>你好</span>开始。</h2><button data-open="contact" class="hello-link">LET'S TALK <span aria-hidden="true">↗</span></button></section>
+  </main>
+  <footer class="footer"><a href="#home" class="footer-brand">lu qi<span>的小小工作室</span></a><p>MADE WITH CURIOSITY & A LITTLE COFFEE.</p><span>© 2026 LU QI</span><a href="#home">回到桌面 ↑</a></footer>
+
+  <dialog id="panel" aria-labelledby="panel-title"><div class="dialog-shell"><button class="close" id="close-panel" aria-label="关闭窗口">×</button><div id="panel-content"></div></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">打开 JavaScript 可以探索三维桌面。你也可以通过 GitHub 找到我：<a href="https://github.com/lq18016485319-gif">lq18016485319-gif</a>。</div></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
