@@ -1,6 +1,6 @@
 // 在这里替换个人简介、真实作品和公开联系方式。原 locker-folio 仓库与本项目独立。
 export const profile = {
-  name: '陆琦', englishName: 'LU QI',
+  name: 'LU QI', englishName: 'LU QI',
   github: 'https://github.com/lq18016485319-gif',
   email: '',
   description: '这是我的小小工作室。一张桌子，装下视觉实验、数字体验和日常里的好奇心。希望把抽象的想法，变成可以看见、触摸和体验的东西。',
